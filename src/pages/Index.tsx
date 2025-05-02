@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import PhotoSection from '@/components/PhotoSection';
+import VideoSection from '@/components/VideoSection';
+import SponsorsSection from '@/components/SponsorsSection';
+import LocationSection from '@/components/LocationSection';
+import TicketsSection from '@/components/TicketsSection';
+import ContactsSection from '@/components/ContactsSection';
+import Footer from '@/components/Footer';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-black">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <PhotoSection />
+        <VideoSection />
+        <SponsorsSection />
+        <LocationSection />
+        <TicketsSection />
+        <ContactsSection />
+      </main>
+      <Footer />
     </div>
   );
 };
