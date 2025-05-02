@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Logo from '@/components/Logo';
-import { FESTIVAL_DATES, FESTIVAL_LOCATION, FESTIVAL_YEAR } from '@/lib/constants';
+import { FESTIVAL_DATES, FESTIVAL_LOCATION } from '@/lib/constants';
 
 const HeroSection: React.FC = () => {
   return (
